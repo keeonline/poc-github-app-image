@@ -1,4 +1,4 @@
-name: Main push
+name: Main push (this repo)
 
 on:
   push:

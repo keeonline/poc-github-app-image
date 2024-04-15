@@ -1,4 +1,4 @@
-name: Feature push
+name: Feature push (this repo)
 
 on:
   push:
