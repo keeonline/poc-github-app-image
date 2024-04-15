@@ -1,8 +1,5 @@
 name: Application image codebase PR
 
-# on:
-#   pull_request:
-
 on:
   workflow_call:
   

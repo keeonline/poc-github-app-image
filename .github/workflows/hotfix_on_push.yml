@@ -1,10 +1,5 @@
 name: Hotfix branch push
 
-# on:
-#   push:
-#     branches:
-#       - 'hotfix*'
-
 on:
   workflow_call:
 

@@ -1,10 +1,5 @@
 name: Main branch push
 
-# on:
-#   push:
-#     branches:
-#       - main
-
 on:
   workflow_call:
 

@@ -1,10 +1,5 @@
 name: Develop branch PR
 
-# on:
-#   pull_request:
-#     branches: 
-#       - develop
-
 on:
   workflow_call:
 

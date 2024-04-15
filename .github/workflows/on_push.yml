@@ -1,8 +1,5 @@
 name: Application image codebase push
 
-# on:
-#   push:
-
 on:
   workflow_call:
   

@@ -1,10 +1,5 @@
 name: Release branch push
 
-# on:
-#   push:
-#     branches:
-#       - 'release*'
-
 on:
   workflow_call:
 
