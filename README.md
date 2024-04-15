@@ -1,1 +1,1 @@
-# poc-github-shared
+# poc-github-app-pipelines

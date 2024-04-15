@@ -34,25 +34,25 @@ jobs:
     name: Push to develop
     needs: [get-branch-type]
     if: needs.get-branch-type.outputs.value == 'develop'
-    uses: ./.github/workflows/develop_on_push.yml
+    uses: ./.github/workflows/app_image_develop_on_push.yml
   push-to-main:
     name: Push to main
     needs: [get-branch-type]
     if: needs.get-branch-type.outputs.value == 'main'
-    uses: ./.github/workflows/main_on_push.yml
+    uses: ./.github/workflows/app_image_main_on_push.yml
   push-to-release:
     name: Push to release
     needs: [get-branch-type]
     if: needs.get-branch-type.outputs.value == 'release'
-    uses: ./.github/workflows/release_on_push.yml
+    uses: ./.github/workflows/app_image_release_on_push.yml
   push-to-hotfix:
     name: Push to hotfix
     needs: [get-branch-type]
     if: needs.get-branch-type.outputs.value == 'hotfix'
-    uses: ./.github/workflows/hotfix_on_push.yml
+    uses: ./.github/workflows/app_image_hotfix_on_push.yml
   push-to-feature:
     name: Push to feature
     needs: [get-branch-type]
     if: needs.get-branch-type.outputs.value == 'feature'
-    uses: ./.github/workflows/feature_on_push.yml
+    uses: ./.github/workflows/app_image_feature_on_push.yml
         

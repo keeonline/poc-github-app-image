@@ -1,4 +1,4 @@
-name: Develop branch PR
+name: Application image main branch PR
 
 on:
   workflow_call:

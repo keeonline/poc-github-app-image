@@ -8,4 +8,4 @@ jobs:
     name: Process push to a branch
     permissions:
         contents: write # this must be set to 'write' in order for the workflow to add a tag
-    uses: ./.github/workflows/gitflow_on_push.yml
+    uses: ./.github/workflows/app_image_on_push.yml

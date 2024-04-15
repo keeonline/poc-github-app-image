@@ -6,4 +6,4 @@ on:
 jobs:
   process-pr:
     name: Process PR to a branch
-    uses: ./.github/workflows/gitflow_on_pull_request.yml
+    uses: ./.github/workflows/app_image_on_pull_request.yml

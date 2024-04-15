@@ -1,4 +1,4 @@
-name: Main branch push
+name: Application image main branch push
 
 on:
   workflow_call:
