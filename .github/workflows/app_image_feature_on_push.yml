@@ -1,10 +1,7 @@
-name: Feature push (this repo)
+name: Application image feature branch push
 
 on:
-  push:
-    branches: 
-      - '**'
-      - '!main'
+  workflow_call:
 
 jobs:
   process-push:
@@ -23,3 +20,10 @@ jobs:
         run: echo "value=${{ steps.semantic_version.outputs.version_tag }}+${{ steps.semantic_version.outputs.increment }}-${GITHUB_REF_NAME}" >> $GITHUB_OUTPUT
       - name: Show the feature version
         run: 'echo This is the feature version that any job or step in the workflow can now use: ${{steps.feature_branch_version.outputs.value}}'
+      - name: Linting
+        run: 'echo Not Implemented: linting action'
+      - name: Build
+        run: 'echo Not Implemented: build action'
+      - name: Publish arterfact
+        run: 'echo Not Implemented: publish action'
+  

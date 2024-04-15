@@ -1,14 +1,11 @@
-name: Feature push (this repo)
+name: Application image hotfix branch push
 
 on:
-  push:
-    branches: 
-      - '**'
-      - '!main'
+  workflow_call:
 
 jobs:
   process-push:
-    name: Process push to feature branch
+    name: Process push to hotfix branch
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
@@ -18,8 +15,14 @@ jobs:
       - name: Get the semantic version
         id: semantic_version
         uses: paulhatch/semantic-version@v5.4.0
-      - name: Get the feature branch version
-        id: feature_branch_version
+      - name: Get the hotfix branch version
+        id: hotfix_branch_version
         run: echo "value=${{ steps.semantic_version.outputs.version_tag }}+${{ steps.semantic_version.outputs.increment }}-${GITHUB_REF_NAME}" >> $GITHUB_OUTPUT
-      - name: Show the feature version
-        run: 'echo This is the feature version that any job or step in the workflow can now use: ${{steps.feature_branch_version.outputs.value}}'
+      - name: Linting
+        run: 'echo Not Implemented: linting action'
+      - name: Build
+        run: 'echo Not Implemented: build action'
+      - name: Publish artefact
+        run: 'echo Not Implemented: publish action'
+
+
