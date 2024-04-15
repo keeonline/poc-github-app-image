@@ -1,4 +1,4 @@
-name: Gitflow PR
+name: Application image codebase PR
 
 # on:
 #   pull_request:
@@ -31,10 +31,10 @@ jobs:
     name: PR to develop
     needs: [get-branch-type]
     if: needs.get-branch-type.outputs.value == 'develop'
-    uses: ./.github/workflows/gitflow_develop_on_pull_request.yml
+    uses: ./.github/workflows/develop_on_pull_request.yml
   pr-to-main:
     name: PR to main
     needs: [get-branch-type]
     if: needs.get-branch-type.outputs.value == 'main'
-    uses: ./.github/workflows/gitflow_main_on_pull_request.yml
+    uses: ./.github/workflows/main_on_pull_request.yml
         

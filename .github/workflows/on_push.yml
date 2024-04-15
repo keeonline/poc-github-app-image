@@ -1,4 +1,4 @@
-name: Gitflow push
+name: Application image codebase push
 
 # on:
 #   push:
@@ -8,7 +8,7 @@ on:
   
 jobs:
   get-branch-type:
-    name: Process push to a Gitflow branch
+    name: Process push to a branch
     runs-on: ubuntu-latest
     permissions:
       contents: write # this must be set to 'write' in order for the workflow to add a tag
@@ -37,25 +37,25 @@ jobs:
     name: Push to develop
     needs: [get-branch-type]
     if: needs.get-branch-type.outputs.value == 'develop'
-    uses: ./.github/workflows/gitflow_develop_on_push.yml
+    uses: ./.github/workflows/develop_on_push.yml
   push-to-main:
     name: Push to main
     needs: [get-branch-type]
     if: needs.get-branch-type.outputs.value == 'main'
-    uses: ./.github/workflows/gitflow_main_on_push.yml
+    uses: ./.github/workflows/main_on_push.yml
   push-to-release:
     name: Push to release
     needs: [get-branch-type]
     if: needs.get-branch-type.outputs.value == 'release'
-    uses: ./.github/workflows/gitflow_release_on_push.yml
+    uses: ./.github/workflows/release_on_push.yml
   push-to-hotfix:
     name: Push to hotfix
     needs: [get-branch-type]
     if: needs.get-branch-type.outputs.value == 'hotfix'
-    uses: ./.github/workflows/gitflow_hotfix_on_push.yml
+    uses: ./.github/workflows/hotfix_on_push.yml
   push-to-feature:
     name: Push to feature
     needs: [get-branch-type]
     if: needs.get-branch-type.outputs.value == 'feature'
-    uses: ./.github/workflows/gitflow_feature_on_push.yml
+    uses: ./.github/workflows/feature_on_push.yml
         
