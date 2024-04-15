@@ -1,4 +1,4 @@
-name: Develop PR
+name: Develop branch PR
 
 # on:
 #   pull_request:

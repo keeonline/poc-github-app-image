@@ -1,0 +1,9 @@
+name: On PR
+
+on:
+  pull_request:
+
+jobs:
+  process-pr:
+    name: Process PR to a branch
+    uses: ./.github/workflows/gitflow_on_pull_request.yml

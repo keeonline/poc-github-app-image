@@ -1,4 +1,4 @@
-name: Develop push
+name: Develop branch push
 
 # on:
 #   push:

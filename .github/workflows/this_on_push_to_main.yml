@@ -1,12 +1,9 @@
-name: Main branch push
-
-# on:
-#   push:
-#     branches:
-#       - main
+name: Main push
 
 on:
-  workflow_call:
+  push:
+    branches:
+      - main
 
 jobs:
   process-push:
@@ -33,18 +30,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag: ${{steps.release_version.outputs.value}}
-      - name: Build
-        run: 'echo Not Implemented: build action'
-      - name: Publish artefact
-        run: 'echo Not Implemented: publish action'
-      - name: Static Application Security Testing (SAST) 
-        run: 'echo Not Implemented: SAST action'
-      - name: Software Composition Analysis (SCA)
-        run: 'echo Not Implemented: SCA action'
-      - name: System Integration testing (SIT)
-        run: 'echo Not Implemented: SIT action'
-      - name: Dynamic Application Security Testing (DAST) 
-        run: 'echo Not Implemented: DAST action'
-      - name: Performance Test (PT) 
-        run: 'echo Not Implemented: PT action'
-

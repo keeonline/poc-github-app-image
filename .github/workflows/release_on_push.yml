@@ -1,4 +1,4 @@
-name: Release push
+name: Release branch push
 
 # on:
 #   push:
