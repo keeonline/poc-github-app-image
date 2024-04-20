@@ -1,0 +1,13 @@
+name: Do nothing
+
+on:
+  workflow_call:
+
+jobs:
+  nothing:
+    name: Nothing
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show
+        run: echo This is do nothing.
+  

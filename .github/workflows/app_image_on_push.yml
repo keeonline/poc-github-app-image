@@ -54,11 +54,6 @@ jobs:
   #   uses: ./.github/workflows/app_image_hotfix_on_push.yml
   push-to-feature:
     name: Push to feature
-    runs-on: ubuntu-latest
-    needs: [get-branch-type]
-    if: needs.get-branch-type.outputs.value == 'feature'
-    steps:
-      - name: show
-        run: echo This is where the local call is made.       
-    #    uses: ./.github/workflows/app_image_feature_on_push.yml
+    #uses: ./.github/workflows/app_image_feature_on_push.yml
+    uses: ./.github/workflows/do_nothing.yml
  
