@@ -31,7 +31,7 @@ jobs:
             echo "value=feature" >> $GITHUB_OUTPUT
           fi
       - name: show shared workflow feature
-        run: echo This is feature-two of shared workflow.
+        run: echo This is feature-one of shared workflow.
   # push-to-develop:
   #   name: Push to develop
   #   needs: [get-branch-type]
