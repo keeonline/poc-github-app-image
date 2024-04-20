@@ -52,9 +52,9 @@ jobs:
   #   needs: [get-branch-type]
   #   if: needs.get-branch-type.outputs.value == 'hotfix'
   #   uses: ./.github/workflows/app_image_hotfix_on_push.yml
-  push-to-feature:
-    name: Push to feature
-    needs: [get-branch-type]
-    if: needs.get-branch-type.outputs.value == 'feature'
-    uses: ./.github/workflows/app_image_feature_on_push.yml
+  # push-to-feature:
+  #   name: Push to feature
+  #   needs: [get-branch-type]
+  #   if: needs.get-branch-type.outputs.value == 'feature'
+  #   uses: ./.github/workflows/app_image_feature_on_push.yml
         
