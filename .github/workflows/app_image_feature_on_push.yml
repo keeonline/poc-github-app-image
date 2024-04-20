@@ -15,7 +15,7 @@ jobs:
       - name: show shared workflow feature
         run: echo This is feature-one of shared workflow.
       - name: show do nothing
-        uses: keeonline/poc-actions/do-nothing@main
+        uses: keeonline/poc-actions/do-nothing@v0.0.0
       - name: Get the semantic version
         id: semantic_version
         uses: paulhatch/semantic-version@v5.4.0
