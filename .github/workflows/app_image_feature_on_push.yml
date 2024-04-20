@@ -16,7 +16,7 @@ jobs:
         run: echo This is feature-one of shared workflow.
       - name: Get the semantic version
         id: semantic_version
-        uses: paulhatch/semantic-version@v5.4.0
+        uses: paulhatch/semantic-version@main
       # - name: Show greeting
       #   uses: keeonline/poc-github-app-pipelines/.github/actions/hello-world@feature-one
       - name: Show greeting
