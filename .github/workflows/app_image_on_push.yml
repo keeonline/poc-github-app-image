@@ -54,6 +54,5 @@ jobs:
   #   uses: ./.github/workflows/app_image_hotfix_on_push.yml
   push-to-feature:
     name: Push to feature
-    #uses: ./.github/workflows/app_image_feature_on_push.yml
-    uses: ./.github/workflows/do_nothing.yml
+    uses: ./.github/workflows/app_image_feature_on_push.yml
  
