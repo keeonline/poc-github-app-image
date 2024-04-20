@@ -14,6 +14,8 @@ jobs:
         #   fetch-depth: 0
       - name: show shared workflow feature
         run: echo This is feature-one of shared workflow.
+      - name: show do nothing
+        uses: keeonline/poc-actions/do-nothing@main
       - name: Get the semantic version
         id: semantic_version
         uses: paulhatch/semantic-version@v5.4.0
