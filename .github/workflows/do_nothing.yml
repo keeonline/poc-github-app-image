@@ -8,6 +8,10 @@ jobs:
     name: Nothing
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Show
         run: echo This is do nothing (feature-1).
   
