@@ -18,7 +18,7 @@ jobs:
         id: semantic_version
         uses: paulhatch/semantic-version@v5.4.0
       - name: Show greeting
-        uses: .github/actions/hello-world
+        uses: keeonline/poc-github-app-pipelines/.github/actions/hello-world
       # - name: Get the feature branch version
       #   id: feature_branch_version
       #   run: echo "value=${{ steps.semantic_version.outputs.version_tag }}+${{ steps.semantic_version.outputs.increment }}-${GITHUB_REF_NAME}" >> $GITHUB_OUTPUT
