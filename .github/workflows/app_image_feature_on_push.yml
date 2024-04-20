@@ -10,8 +10,8 @@ jobs:
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+        # with:
+        #   fetch-depth: 0
       - name: show shared workflow feature
         run: echo This is feature-one of shared workflow.
       - name: Get the semantic version
