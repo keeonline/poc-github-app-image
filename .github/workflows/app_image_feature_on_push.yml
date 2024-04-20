@@ -20,7 +20,7 @@ jobs:
       # - name: Show greeting
       #   uses: keeonline/poc-github-app-pipelines/.github/actions/hello-world@feature-one
       - name: Show greeting
-        uses: ./.github/workflows/helpers/hello_world.yml
+        uses: ./.github/workflows/helper_hello_world.yml
       # - name: Get the feature branch version
       #   id: feature_branch_version
       #   run: echo "value=${{ steps.semantic_version.outputs.version_tag }}+${{ steps.semantic_version.outputs.increment }}-${GITHUB_REF_NAME}" >> $GITHUB_OUTPUT
