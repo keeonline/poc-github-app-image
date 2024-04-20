@@ -1,0 +1,13 @@
+name: Do nothing
+
+on:
+  workflow_call:
+
+jobs:
+  nothing:
+    name: Nothing
+    runs-on: ubuntu-latest
+    steps:
+      - name: hello
+        run: echo "Hello world! (feature-1)."
+  
